@@ -1,0 +1,276 @@
+
+header
+        {
+        color: black ;
+        display:flex ;
+        justify-content:space-between ;
+        align-content: center;
+        }
+    #logo
+        {
+        width: auto;
+        height: 15px;
+        }
+    .navigation
+        {
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        list-style: none;
+        color: black;
+        outline: none;
+        width: auto;
+        height: auto;
+        font-size: 16px;
+        }
+    header a 
+        { 
+        outline: none;
+        text-decoration: none;
+        color: black;
+        }    
+    header a:link 
+        { 
+        outline: none;
+        text-decoration: none;
+        color: black;
+        }
+    header a :visited
+        {
+        outline: none;
+        text-decoration: none;
+        color: black;
+        }
+    header a:focus
+        { 
+        outline: none;
+        text-decoration: none;
+        border-top: 5px #0065fc solid;
+        color: #0065fc;
+        outline: none;
+        } 
+    header a:hover
+        { 
+        outline: none;
+        text-decoration: none;
+        border-top: 5px #0065fc solid;
+        color: #0065fc;
+        outline: none;
+        }
+    
+    header a:active 
+        { 
+        outline: none;
+        text-decoration: none;
+        border-top: 5px #0065fc solid;
+        color: #0065fc;
+        outline: none;
+        }
+body    
+        {
+        font-family: 'Raleway', sans-serif;
+        max-width: 1400px;
+        }
+    h1
+        {
+        font-size: 22px;
+        }
+    h2
+        {
+         font-size: 22px;
+        }
+    h3
+        {
+        font-size: 16px;
+        }   
+    p
+        {
+        font-size: 16px;
+        }
+main
+        {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            
+        }
+#article
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            
+        }
+#hébergement
+        {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+        align-content: center;
+        background-color: #f2f2f2;
+        border: 2px solid #f2f2f2;
+        border-radius: 20px 20px 20px 20px;
+        width: 880px;
+        height: 626px;
+        }
+    #hébergement div
+        {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    .buttonhébergement
+        {
+        border: 2px solid white;
+        border-radius: 20px 20px 20px 20px;
+        box-shadow: 0px 3px 15px white;
+        background-color: white;
+        overflow: hidden;
+        width: 246px;
+        height: 199px;
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+        margin-bottom: 35px;        
+        }
+    .buttonhébergement img
+        {
+        width: 246px;
+        height: 124px;
+        }
+#pop
+{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#populaires
+        {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+        align-content: space-around;
+        background-color: #f2f2f2;
+        border: 2px solid #f2f2f2;
+        border-radius: 20px 20px 20px 20px;
+        width: 420px;
+        height: 626px;
+        }
+.buttonpopulaires img
+        {
+        width: 137px;
+        height: 144px;   
+        border: 5px solid white;
+        border-radius: 20px 0px 0px 20px;
+        }
+.buttonpopulaires
+{
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 3px 15px  white;
+    overflow: hidden;
+    width: 343px;
+    height: 144px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 35px;       
+    justify-content: space-between ; 
+    }
+.legend
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.buttonpopulaires a
+    {
+        display: flex;
+        justify-content: space-between;
+        align-content: space-around;
+    }
+#activités
+        {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+        align-content: center;
+        }
+    #button
+        {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        }
+    .buttonActivités
+        {
+        border: 2px solid #d9d9d9;
+        border-radius: 20px 20px 20px 20px;
+        box-shadow: 0px 3px 15px  #f2f2f2;
+        overflow: hidden;
+        width: 302px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 35px;        
+        }
+    .buttonActivités img
+        {
+        width: 302px;
+        height: 389px;
+        }
+    .buttonActivités a,.buttonhébergement a,.buttonpopulaires a
+        { 
+        outline: none;
+        text-decoration: none;
+        color: black;
+        }    
+    .buttonActivités a:link,.buttonhébergement a:link,.buttonpopulaires a:link
+        {
+        outline: none;
+        text-decoration: none;
+        color: black;
+        }
+    .buttonActivités a :visited,.buttonhébergement a :visited,.buttonpopulaires a :visited 
+        {
+        outline: none;
+        text-decoration: none;
+        color: black;
+        }
+    .buttonActivités a:focus,.buttonhébergement a:focus,.buttonpopulaires a:focus
+        { 
+        outline: none;
+        text-decoration: none;
+        color: black;
+        }
+    .buttonActivités a:hover,.buttonhébergement a:hover,.buttonpopulaires a:hover
+        {
+        outline: none;
+        text-decoration: none;
+        color: black;
+        }
+    .buttonActivités a:active,.buttonhébergement a:active,.buttonpopulaires a:active 
+        { 
+        outline: none;
+        text-decoration: none;
+        color: black;
+        }
+footer
+        {
+        display: flex  ;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: #f2f2f2;
+        }
+    #Apropos,#Noshebergements,#Assistance
+        {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        }
