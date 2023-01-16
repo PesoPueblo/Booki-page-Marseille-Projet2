@@ -4,7 +4,7 @@ header
         color: black ;
         display:flex ;
         justify-content:space-between ;
-        align-content: center;
+        align-content: flex-end;
         }
     #logo
         {
@@ -14,38 +14,40 @@ header
     .navigation
         {
         display: flex;
-        justify-content: space-around;
-        align-content: center;
+        justify-content: space-between;
+        align-content: space-between;
         list-style: none;
         color: black;
-        outline: none;
-        width: auto;
-        height: auto;
         font-size: 16px;
         }
     header a 
         { 
         outline: none;
         text-decoration: none;
+        border-top: 5px white solid;
         color: black;
+        padding-top: 35px;
+        padding-left: 20px;
         }    
     header a:link 
         { 
         outline: none;
         text-decoration: none;
+        border-top: 5px white solid;
         color: black;
         }
     header a :visited
         {
         outline: none;
         text-decoration: none;
+        border-top: 5px white solid;
         color: black;
         }
     header a:focus
         { 
         outline: none;
         text-decoration: none;
-        border-top: 5px #0065fc solid;
+        border-top: 5px white solid;
         color: #0065fc;
         outline: none;
         } 
