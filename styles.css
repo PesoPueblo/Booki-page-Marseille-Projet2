@@ -89,6 +89,39 @@ body
         {
         font-size: 16px;
         }
+i
+{
+    color: #0065fc;
+}
+#filtre,#filtre button
+{
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    justify-content: space-around;
+}
+#filtre button
+{
+    font-size: 14px;
+    box-sizing: border-box;
+    height: 48px;
+    border: 2px solid #f2f2f2;
+    border-radius: 25px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4px 20px;
+    
+
+}
+#filtre button:hover
+{
+    background-color: rgba(222, 235, 255, 1);
+    border: 2px solid #f2f2f2;
+    
+}
 main
         {
             display: flex;
@@ -123,6 +156,7 @@ main
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-around;
+            align-content: space-between;
         }
     .buttonhébergement
         {
@@ -133,9 +167,6 @@ main
         overflow: hidden;
         width: 246px;
         height: 199px;
-        display: flex;
-        flex-direction: column;
-        align-content: space-around;
         margin-bottom: 35px;        
         }
     .buttonhébergement img
@@ -163,6 +194,12 @@ main
         width: 420px;
         height: 626px;
         }
+#titleh2
+{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
 .buttonpopulaires img
         {
         width: 137px;
