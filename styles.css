@@ -10,6 +10,7 @@ header
         {
         width: auto;
         height: 15px;
+        padding: 35px;
         }
     .navigation
         {
@@ -26,8 +27,8 @@ header
         text-decoration: none;
         border-top: 5px white solid;
         color: black;
-        padding-top: 35px;
-        padding-left: 20px;
+        padding: 35px;
+        margin-right: 20px;
         }    
     header a:link 
         { 
@@ -196,9 +197,13 @@ main
         }
 #titleh2
 {
-    display: flex;
+    display:inline-flex;
+    flex-direction: row;
     justify-content: space-around;
-    align-content: center;
+    align-content: flex-end;
+}
+#titleh2 i{
+    align-self: center;
 }
 .buttonpopulaires img
         {
