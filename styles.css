@@ -193,8 +193,16 @@ main
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-around;
-            align-content: space-between;
+            align-content: flex-end;
         }
+    .buttonhébergement p
+    {
+        padding-left: 20px;
+    }
+    .name
+    {
+        font-weight:bold ;
+    }
     .buttonhébergement
         {
         border: 2px solid white;
@@ -266,7 +274,8 @@ main
 {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-content: flex-start;
 }
 .buttonpopulaires a
     {
