@@ -101,9 +101,8 @@ header
         display: flex;
         flex-direction: row;
         align-content: center;
-        border-collapse: collapse;
-        border-radius: 15px;
         border: 2px solid #f2f2f2;
+        border-radius: 15px;
         width: 302px;
         height: 49px;
         margin: 35px;
@@ -114,17 +113,18 @@ header
         color:white;
         background-color: #0065fc;
         width: 132px;
-        border-top-right-radius: 15px;
-        border-bottom-right-radius: 15px;
+       border: none;
         }
     #recherche i 
         {
         background-color: #f2f2f2;
         color: black;
         padding:1em;
+        
         }
     input
         {
+        border: none;
         background-color: white;
         color: black;
         width: 236px;
