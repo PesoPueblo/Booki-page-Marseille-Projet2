@@ -4,6 +4,8 @@
         font-family: 'Raleway', sans-serif;
         max-width: 1440px;
         margin: auto;
+        padding-left: 3.5%;
+        padding-right: 3.5%;
         }
     h1
         {
@@ -35,9 +37,7 @@
         color: black ;
         display:flex ;
         justify-content:space-between ;
-        align-content: flex-end;
         width: 100%;
-        padding-left: 3% ;
         }
     #logo
         {
@@ -48,10 +48,8 @@
         {
         display: flex;
         justify-content: center;
-        align-content: flex-end;
         list-style: none;
         color: black;
-        font-size: 100%;
         height: 100%;
         width: 26%;
         }
@@ -66,7 +64,6 @@
         height: 100%;
         display: flex;
         justify-content: center;
-        align-self: center;
         }    
     header a:link 
         { 
@@ -108,16 +105,10 @@
         outline: none;
         }
 /*Partie titre et recherche (section recherche)*/   
-    #recherche
-        {
-        padding-left: 3% ;
-        }
     #toolsearch
         {
         display: flex;
         flex-direction: row;
-        justify-content: flex-start;
-        align-content: center;
         border: 2px solid #f2f2f2;
         border-radius: 15px;
         max-width: 418px;
@@ -125,24 +116,23 @@
         overflow: hidden;
         position: relative;
         }
-    #searchIcon, #searchIcon i
-        {
-        visibility:hidden;
-        color: white;
-        background-color: #0065fc;
-        width: 50px;
-        height: 100%;
-        padding-top: 3.5%;
-        display: flex;
-        justify-content: center;
-        }
     #searchIcon
         {
+        visibility: hidden;
         position: absolute;
         width: 50px;
         height: 100%;
-        
-
+        border: 2px solid #0065fc;
+        border-radius:0px 15px 15px 0px;
+        background-color: #0065fc;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        }
+    #searchIcon i
+        {
+            color: white;
         }
     #searchtext
         {
@@ -150,8 +140,7 @@
         background-color: #0065fc;
         width: 132px;
         height: 100%;
-       border: none;
-       z-index: 1;
+        border: none;
         }
     #map
         {
@@ -159,9 +148,10 @@
         color: black;
         width: 50px;
         height: 100%;
-        padding-top: 3.5%;
         display: flex;
         justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
         
         }
     input
@@ -172,77 +162,59 @@
         width: 56.46%;
         } 
 /*Partie filtre */  
-    #filtre
+    #filter
         {
         max-width: 63.5%;
         display: flex;
-        align-content: flex-start;
         justify-content: space-between;
-        padding: 3.5%;            
+        padding-top: 3.5%;
+        padding-bottom: 3.5%;          
         }
-    #filtre button
-        {
-        font-size: 14px;
-        box-sizing: border-box;
-        min-height: 48px;
-        border: 2px solid #f2f2f2;
-        border-radius: 25px;
-        background-color: white;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding: 4px 20px;        
+    #filter button
+        {   
+            min-height: 48px;
+            border: 2px solid #f2f2f2;
+            border-radius: 25px;
+            background-color: white;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 4px 20px;
+            justify-content: center;       
         }
-    #filtre button:hover
+    #filter button:hover
         {
         background-color: rgba(222, 235, 255, 1);
         border: 2px solid #f2f2f2;   
         }
-    #filtre button:active
+    #filter button:active
         {
         background-color: rgba(222, 235, 255, 1);
         border: 2px solid #f2f2f2;  
         }
 /*Corps de la page */       
-    main
+        #Aera_main
         {
         display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        padding-left: 3%;
-        padding-right: 3%;       
-        }
-    #article
-        {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: nowrap;         
+        justify-content: space-between;        
         }
 /*zone hébergement marseille*/
     #hébergement
         {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: stretch;
-        align-content: center;
         background-color: #f2f2f2;
-        border: 2px solid #f2f2f2;
         border-radius: 20px 20px 20px 20px;
         max-width: 61.11%;
         }
     #hébergement div
         {
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
         align-content: flex-end;
         }
-    .buttonhébergement
+    .card_hébergement
         {
-        border: 2px solid white;
+        border: 5px solid white;
         border-radius: 20px 20px 20px 20px;
         box-shadow: 0px 3px 15px white;
         background-color: white;
@@ -251,11 +223,11 @@
         height: 199px;
         margin-bottom: 35px;        
         }
-    .buttonhébergement img
+    .card_hébergement img
         {
         width: 100%;
         }
-    .buttonhébergement p
+    .card_hébergement p
         {
         padding-left: 20px;
         }
@@ -268,139 +240,113 @@
         {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        align-items: stretch;
-        align-content: space-around;
         background-color: #f2f2f2;
-        border: 2px solid #f2f2f2;
         border-radius: 20px 20px 20px 20px;
         max-width: 31.57%;
         }
-    #titleh2
+    #title_Area_Populaires
         {
         display:inline-flex;
-        flex-direction: row;
         justify-content: space-around;
-        align-content: flex-end;
-        padding-left: 4.53%;
-        padding-right: 4.53%;
         }
-    #titleh2 i
+    #title_Area_Populaires i
         {
         align-self: center;
         }
-    #pop
+    #AreaCardPopulaires
         {
         display:flex;
-        justify-content: center;
         flex-direction: column;
         align-items: center;
         }
-    .buttonpopulaires
+    .card_populaires
         {
         background-color: white;
         border: 2px solid white;
         border-radius: 20px 20px 20px 20px;
         box-shadow: 0px 3px 15px  white;
-        overflow: hidden;
         width: 81.67%;
         height: 144px;
         display: flex;
-        flex-direction: row;
-        margin-bottom: 35px;       
-        justify-content: space-between ; 
+        margin-bottom: 35px;
         }
-    .buttonpopulaires img
+    .card_populaires img
         {
-        width: 41%; 
-        min-width: 144px; 
+        width: 41%;
         border: 5px solid white;
         border-radius: 20px 0px 0px 20px;
         }
-    .buttonpopulaires a
+    .card_populaires a
         {
         display: flex;
-        justify-content: space-between;
-        align-content: space-around;
         }
     .legend
         {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        align-content: flex-start;
-        width: 59%;
         }
 /*Partie activité*/
     #activités
         {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: stretch;
-        align-content: center;
-        padding: 3%;
+        padding-bottom: 3.5%;
+        padding-top: 3.5%;
         }
-    #button
+    #Area_card_Activités
         {
         display: flex;
-        flex-direction: row;
         justify-content: space-between;
-        max-height: 445px;
-        height: 75%;
         }
-    .buttonActivités
+    .card_Activités
         {
         border: 2px solid #d9d9d9;
         border-radius: 20px 20px 20px 20px;
         box-shadow: 0px 3px 15px  #f2f2f2;
         overflow: hidden;
-        width: 20.97%;
-        display: flex;
-        flex-direction: column;      
+        width: 20.97%; 
         }
-    .buttonActivités img
+    .card_Activités img
         {
         height: 387px;
         width: 100%;
         }
-    .buttonActivités h3
+    .card_Activités h3
         {
         padding-left: 7.69%;
         
         }
 /*Règles commune aux card*/
-    .buttonActivités a,.buttonhébergement a,.buttonpopulaires a
+    .card_Activités a,.card_hébergement a,.card_populaires a
         { 
         outline: none;
         text-decoration: none;
         color: black;
         }    
-    .buttonActivités a:link,.buttonhébergement a:link,.buttonpopulaires a:link
+    .card_Activités a:link,.card_hébergement a:link,.card_populaires a:link
         {
         outline: none;
         text-decoration: none;
         color: black;
         }
-    .buttonActivités a :visited,.buttonhébergement a :visited,.buttonpopulaires a :visited 
+    .card_Activités a:visited,.card_hébergement a:visited,.card_populaires a:visited 
         {
         outline: none;
         text-decoration: none;
         color: black;
         }
-    .buttonActivités a:focus,.buttonhébergement a:focus,.buttonpopulaires a:focus
+    .card_Activités a:focus,.card_hébergement a:focus,.card_populaires a:focus
         { 
         outline: none;
         text-decoration: none;
         color: black;
         }
-    .buttonActivités a:hover,.buttonhébergement a:hover,.buttonpopulaires a:hover
+    .card_Activités a:hover,.card_hébergement a:hover,.card_populaires a:hover
         {
         outline: none;
         text-decoration: none;
         color: black;
         }
-    .buttonActivités a:active,.buttonhébergement a:active,.buttonpopulaires a:active 
+    .card_Activités a:active,.card_hébergement a:active,.card_populaires a:active 
         { 
         outline: none;
         text-decoration: none;
@@ -410,68 +356,43 @@
     footer
         {
         display: flex  ;
-        flex-direction: row;
         justify-content: space-around;
         background-color: #f2f2f2;
-        padding-left: 3.35%;
-        padding-right: 3.35%;
         }
 /*Responsive forma tablette*/
 @media screen and (max-width:992px) and (min-width:768px)
 {
-    #filtre
+    #filter
         {
         max-width: 100%;
         }
-    #article
+    #Aera_main
         {
-        display: flex;
         flex-direction: column;
-        justify-content: space-between;
         }
     #hébergement
         {
-        max-width: 883px;    
+        max-width: unset;    
         }
     #populaires
         {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: stretch;
-        align-content: space-around;
-        background-color: #f2f2f2;
-        border: 2px solid #f2f2f2;
-        border-radius: 20px 20px 20px 20px;
-        max-width: 883px;
-        min-height: 278px;
+        max-width: unset;
         margin-top: 35px;
         }
-    .buttonpopulaires
+    #title_Area_Populaires
+        {
+        justify-content: space-between;
+        } 
+    #AreaCardPopulaires
+        {
+        justify-content: space-around;
+        flex-direction: row;
+        }
+    .card_populaires
         {
         width: 28.54%;
         }
-    .buttonpopulaires img
-    {
-        min-width: 0;
-    }
-    #pop
-        {
-        justify-content: space-around;
-        }
-    #titleh2
-        {
-        display:inline-flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-content: flex-start;
-        }
-    #pop
-        {
-        display: flex;
-        flex-direction: row;
-        }
-    .buttonActivités img
+    .car_Activités img
         {
         width: 100%;
         height: 211px;
@@ -480,23 +401,15 @@
 /* responsive téléphone*/
 @media screen and (max-width:768px) 
 {
+    body
+        {
+        padding-left: unset;
+        padding-right: unset;
+        }
     header
         {
-        display:flex;
         flex-direction: column;
-        justify-content: center;
-        align-content: center;
         padding-top: 21px;
-        }
-    #logo
-        {
-        height: 19px;
-        width: 61px;
-        align-self: center;
-        }
-    .navigation
-        {
-        width: 100%; 
         }
     header a
         {
@@ -512,6 +425,14 @@
         border-top: none;
         outline: none;
         }
+    #logo
+        {
+        align-self: center;
+        }
+    .navigation
+        {
+        width: 100%; 
+        }
     #searchtext
         {
         visibility: hidden;
@@ -519,29 +440,7 @@
     #searchIcon
         {
         visibility: visible;
-        border-top: 2px solid #f2f2f2;
-        border-bottom: 2px solid #f2f2f2;
-        border-right: 2px solid #f2f2f2 ;
-        border-radius:0px 15px 15px 0px;
-        color: white;
-        display: flex;
-        justify-content: center;
-        padding-top: 3.5%;
-        overflow: hidden;
         }
-    #searchIcon i
-        {
-        visibility: visible;
-        color: white;
-        display: flex;
-        justify-content: center;
-        padding-top: 3.5%;
-        }
-    #map
-    {
-        border-top: 2px solid #f2f2f2;
-        border-bottom: 2px solid #f2f2f2;
-    }
     #toolsearch
         {
         border: none;
@@ -553,113 +452,71 @@
         border-top: 2px solid #f2f2f2;
         border-bottom: 2px solid #f2f2f2;
         }
-    #filtre
+    #filter
         {
         justify-content: space-around;
         flex-wrap: wrap;
         max-width: 100%;
         }
-    #filtre h3
+    #filter h3
         {
-        align-self:flex-start;
         width: 100%;
         }
-    #filtre button 
+    #filter button 
         {
         width: 42.44%;
         margin-bottom: 14px;
         }
-    #article
+    #Aera_main
         {
-        display: flex;
         flex-direction: column-reverse;
-        justify-content: space-between;
         }
     #populaires
-    {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: stretch;
-        align-content: space-around;
-        background-color: #f2f2f2;
-        border: 2px solid #f2f2f2;
-        border-radius: 20px 20px 20px 20px;
-        max-width:768px;
-        min-width: 0;
+        {
+        border-radius: unset;
+        max-width:100%;
         margin-top: 35px;
-    }
-    #titleh2
-    {
-        display:inline-flex;
-        flex-direction: row;
+        }
+    #title_Area_Populaires
+        {
         justify-content: space-between;
-        align-content: flex-start;
-    }
-    #pop
-    {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-content: flex-start;
-    }
+        }
     #hébergement, #hébergement div
-    {
-        display: flex;
-        flex-direction: column;
+        {
         background-color: white;
-        width: 100%;
-        align-content: unset;
         max-width: unset;
-        border: none;
-    }
-    .buttonhébergement
-    {   
-    width: 100%;
-    box-shadow: 0px 3px 15px #f2f2f2;
-    }
-    .buttonhébergement a
-    {
+        }
+    .card_hébergement
+        {   
+        width: 81.67%;
+        box-shadow: 0px 3px 15px #f2f2f2;
+        height: unset;
+        }
+    .card_hébergement a
+        {
         width: 100%;
-        max-height:199px;
-        display: flex;
-        flex-direction: column;
-        align-content: flex-end;
-    }
-    .buttonhébergement img
-    {
-        max-height: 62.31%;
-        width: 100%;
-    }
-    .buttonhébergement p
-    {
-        min-height:37.69%;
-    }
-    #button
+        }
+    .card_hébergement img
+        {
+        height: 199px;
+        }
+    #Area_card_Activités
+        {
+        justify-content: space-around;
+        flex-wrap: wrap;
+        }
+    .card_Activités
+        {
+        width: 81.67%;
+        margin-bottom: 8%;
+        }
+    .card_Activités img
+        {
+        height:134px;        
+        }
+    footer 
         {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        align-content: space-around;
-        max-height: none;
-        height: 75%;
-       
         }
-    .buttonActivités
-    {
-        width: 100%;
-        max-height: 190px;
-        margin-bottom: 8%;
-        
-    }
-    .buttonActivités img{
-        height: 70.52%;
-        max-height: 134px;
-        
-    }
-    footer 
-    {
-    display: flex;
-    flex-direction: column;
-    }
 }
