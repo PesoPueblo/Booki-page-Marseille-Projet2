@@ -104,7 +104,11 @@
         color: #0065fc;
         outline: none;
         }
-/*Partie titre et recherche (section recherche)*/   
+/*Partie titre et recherche (section recherche)*/  
+    #recherche
+        {
+        padding-top: 7.5%;
+        }
     .toolsearch
         {
         display: flex;
@@ -168,7 +172,8 @@
         display: flex;
         justify-content: space-between;
         padding-top: 3.5%;
-        padding-bottom: 3.5%;          
+        padding-bottom: 3.5%;
+        padding-left: 0.65%;       
         }
     #filter button
         {   
@@ -192,8 +197,12 @@
         background-color: rgba(222, 235, 255, 1);
         border: 2px solid #f2f2f2;  
         }
-/*Corps de la page */       
-        #Aera_main
+/*Corps de la page */ 
+    .infos
+        {
+        padding-left: 0.65%;
+        }    
+    #Aera_main
         {
         display: flex;
         justify-content: space-between;        
@@ -204,6 +213,16 @@
         background-color: #f2f2f2;
         border-radius: 20px 20px 20px 20px;
         max-width: 61.11%;
+        }
+    #hébergement>h2
+        {
+        padding-left: 3%;
+        padding-top: 3%;
+        }
+    #hébergement>h3
+        {
+        padding-bottom: 4.54%;
+        padding-left: 4.54%;
         }
     #hébergement div
         {
@@ -248,6 +267,7 @@
         {
         display:inline-flex;
         justify-content: space-around;
+        padding-top: 3%;
         }
     #title_Area_Populaires i
         {
@@ -356,8 +376,15 @@
     footer
         {
         display: flex  ;
-        justify-content: space-around;
         background-color: #f2f2f2;
+        }
+    #Apropos
+        {
+        padding-left: 5.22%;
+        }
+    #Noshebergements,#Assistance
+        {
+        padding-left: 17.18%;
         }
 /*Responsive format tablette*/
 @media screen and (max-width:992px) and (min-width:768px)
@@ -382,6 +409,8 @@
     #title_Area_Populaires
         {
         justify-content: space-between;
+        padding-left: 3%;
+        padding-right: 3%;
         } 
     #AreaCardPopulaires
         {
@@ -392,7 +421,7 @@
         {
         width: 28.54%;
         }
-    .car_Activités img
+    .card_Activités img
         {
         width: 100%;
         height: 211px;
@@ -433,6 +462,10 @@
         {
         width: 100%; 
         }
+    #recherche
+        {
+        padding-left: 5.3%;
+        }
     #searchtext
         {
         visibility: hidden;
@@ -458,14 +491,19 @@
         flex-wrap: wrap;
         max-width: 100%;
         }
-    #filter h3
+    #filter>h3
         {
         width: 100%;
+        padding-left: 5.3%;
         }
     #filter button 
         {
         width: 42.44%;
         margin-bottom: 14px;
+        }
+    .infos
+        {
+        padding-left: 5.3%;
         }
     #Aera_main
         {
@@ -480,6 +518,12 @@
     #title_Area_Populaires
         {
         justify-content: space-between;
+        padding-left: 5.3%;
+        padding-right: 5.3%;
+        }
+        #hébergement>h2 
+        {
+        padding-left: 5.3%;
         }
     #hébergement, #hébergement div
         {
@@ -500,6 +544,10 @@
         {
         height: 199px;
         }
+    #activités>h2
+        {
+        padding-left: 5.3%;
+        }
     #Area_card_Activités
         {
         justify-content: space-around;
@@ -518,5 +566,10 @@
         {
         display: flex;
         flex-direction: column;
+        }
+    #Apropos,#Noshebergements,#Assistance
+        {
+        padding-left: 13%;
+        padding-top: 9%;
         }
 }
