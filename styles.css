@@ -245,6 +245,7 @@
     .card_hébergement img
         {
         width: 100%;
+        object-fit: cover;
         }
     .card_hébergement p
         {
@@ -295,6 +296,7 @@
         width: 41%;
         border: 5px solid white;
         border-radius: 20px 0px 0px 20px;
+        object-fit: cover;
         }
     .card_populaires a
         {
@@ -329,6 +331,7 @@
         {
         height: 387px;
         width: 100%;
+        object-fit: cover;
         }
     .card_Activités h3
         {
