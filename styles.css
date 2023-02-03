@@ -216,6 +216,12 @@
         border-radius: 20px 20px 20px 20px;
         max-width: 61.11%;
         }
+    #AreaCardHébergement
+        {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
     #hébergement>h2
         {
         padding-left: 3%;
@@ -226,7 +232,7 @@
         padding-bottom: 4.54%;
         padding-left: 4.54%;
         }
-    #hébergement div
+    #hébergement article
         {
         display: flex;
         flex-wrap: wrap;
