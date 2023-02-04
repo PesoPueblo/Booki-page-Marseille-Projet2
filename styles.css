@@ -222,6 +222,12 @@
             flex-wrap: wrap;
             justify-content: space-around;
         }
+    .card_hébergement h3
+        {
+        margin-top: unset;
+        margin-bottom: unset;
+        padding-left: 4.54%;
+        }
     #hébergement>h2
         {
         padding-left: 3%;
@@ -257,7 +263,8 @@
         }
     .card_hébergement p
         {
-        padding-left: 20px;
+        margin-top: unset;
+        padding-left: 4.54%;
         }
     .name
         {
@@ -310,11 +317,20 @@
         {
         display: flex;
         }
+    .legend h3
+        {
+        margin-bottom: unset;
+        }
+    .legend p
+        {
+        margin-top: unset;
+        }
     .legend
         {
         width: 59%;
         display: flex;
         flex-direction: column;
+        padding-left: 4.54%;
         justify-content: space-between;
         }
 /*Partie activité*/
